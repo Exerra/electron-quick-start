@@ -5,8 +5,13 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
+    //frame: false,
+    titleBarStyle: 'hidden',
+    //trafficLightPosition: {x: 500, y: 500},
+    vibrancy: 'appearance-based',
+    titleBarStyle: 'hiddenInset',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
